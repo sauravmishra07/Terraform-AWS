@@ -16,6 +16,16 @@ This repository contains Terraform configurations for managing AWS resources acr
 - **aws-vpc/**: Contains Terraform configurations for managing VPCs.
   - `main.tf`: Main configuration file for VPC.
 
+- **Ecommerce-project/**: Contains configurations for deploying an ecommerce static site to S3.
+  - `index.html`: Main HTML file for the ecommerce site.
+  - `main.tf`: Main configuration file for S3 bucket and website hosting.
+  - `script.js`: JavaScript file for ecommerce functionality.
+  - `style.css`: CSS file for styling the ecommerce website.
+
+- **practice-tf/**: Contains practice Terraform configurations.
+  - `ec2/`: Subdirectory with EC2 practice configurations.
+    - `main.tf`: Practice configuration file for EC2.
+
 - **proj-static-website/**: Contains configurations for deploying a static website.
   - `index.html`: Main HTML file for the static website.
   - `main.tf`: Main configuration file for the static website.
