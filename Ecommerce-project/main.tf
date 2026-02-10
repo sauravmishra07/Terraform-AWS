@@ -83,7 +83,7 @@ resource "aws_s3_object" "script_js" {
 
 }
 
-output "name" {
+output "website-url" {
   value = aws_s3_bucket_website_configuration.ecommerce-app.website_endpoint
 
 }
