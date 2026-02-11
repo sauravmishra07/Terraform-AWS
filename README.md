@@ -5,11 +5,10 @@ This repository contains Terraform configurations for managing AWS resources acr
 ## Directory Structure
 
 - **aws-ec2/**: Contains Terraform configurations for managing EC2 instances.
-- **aws-ec2/**: Contains Terraform configurations for managing EC2 instances.
-- `main.tf`: Main configuration file for EC2.
-- `dummy.tf`: Example or placeholder Terraform file for EC2 testing.
-- `terraform.tfstate`: Terraform state file for EC2.
-- `terraform.tfstate.backup`: Backup of the Terraform state file.
+  - `main.tf`: Main configuration file for EC2.
+  - `dummy.tf`: Example or placeholder Terraform file for EC2 testing.
+  - `terraform.tfstate`: Terraform state file for EC2.
+  - `terraform.tfstate.backup`: Backup of the Terraform state file.
 
 - **aws-s3/**: Contains Terraform configurations for managing S3 buckets.
   - `main.tf`: Main configuration file for S3.
@@ -41,6 +40,14 @@ This repository contains Terraform configurations for managing AWS resources acr
   - `index.html`: Main HTML file for the static website.
   - `main.tf`: Main configuration file for the static website.
   - `styles.css`: CSS file for styling the static website.
+
+- **data-source/**: Contains Terraform configurations for AWS data sources.
+  - `main.tf`: Main configuration file for data source queries.
+
+- **tf-variable/**: Contains Terraform variable definitions and configurations.
+  - `main.tf`: Main configuration file.
+  - `variable.tf`: Variable definitions.
+  - `terraform.tfvars`: Terraform variable values.
 
 ## Getting Started
 
