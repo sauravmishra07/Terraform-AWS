@@ -5,9 +5,11 @@ This repository contains Terraform configurations for managing AWS resources acr
 ## Directory Structure
 
 - **aws-ec2/**: Contains Terraform configurations for managing EC2 instances.
-  - `main.tf`: Main configuration file for EC2.
-  - `terraform.tfstate`: Terraform state file for EC2.
-  - `terraform.tfstate.backup`: Backup of the Terraform state file.
+- **aws-ec2/**: Contains Terraform configurations for managing EC2 instances.
+- `main.tf`: Main configuration file for EC2.
+- `dummy.tf`: Example or placeholder Terraform file for EC2 testing.
+- `terraform.tfstate`: Terraform state file for EC2.
+- `terraform.tfstate.backup`: Backup of the Terraform state file.
 
 - **aws-s3/**: Contains Terraform configurations for managing S3 buckets.
   - `main.tf`: Main configuration file for S3.
@@ -15,6 +17,15 @@ This repository contains Terraform configurations for managing AWS resources acr
 
 - **aws-vpc/**: Contains Terraform configurations for managing VPCs.
   - `main.tf`: Main configuration file for VPC.
+
+- **aws-vpc-ngnix/**: VPC + NGINX/EC2 Terraform module for testing web servers.
+  - `providers.tf`: Provider configuration.
+  - `vpc.tf`: VPC and networking resources.
+  - `security_groups.tf`: Security group rules for EC2/NGINX.
+  - `ec2.tf`: EC2 instance definitions (NGINX server).
+  - `main.tf`: High-level module composition.
+  - `output.tf`: Outputs for the module.
+  - `terraform.tfstate` / `terraform.tfstate.backup`: Local Terraform state files.
 
 - **Ecommerce-project/**: Contains configurations for deploying an ecommerce static site to S3.
   - `index.html`: Main HTML file for the ecommerce site.
