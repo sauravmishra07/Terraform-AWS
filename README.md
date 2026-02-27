@@ -35,6 +35,8 @@ This repository contains Terraform configurations for managing AWS resources acr
 - **practice-tf/**: Contains practice Terraform configurations.
   - `ec2/`: Subdirectory with EC2 practice configurations.
     - `main.tf`: Practice configuration file for EC2.
+  - `aws-vpc/`: Subdirectory with VPC practice configurations.
+    - `main.tf`: Practice configuration file for VPC with subnets, internet gateway, and route tables.
 
 - **proj-static-website/**: Contains configurations for deploying a static website.
   - `index.html`: Main HTML file for the static website.
@@ -48,6 +50,12 @@ This repository contains Terraform configurations for managing AWS resources acr
   - `main.tf`: Main configuration file.
   - `variable.tf`: Variable definitions.
   - `terraform.tfvars`: Terraform variable values.
+
+- **tf-jenkins/**: Contains Terraform configurations for deploying Jenkins on AWS EC2.
+  - `mian.tf`: Main configuration file with security group (SSH port 22, Jenkins port 8080) and EC2 instance.
+  - `variable.tf`: Variable definitions for aws_region, ami_id, instance_type, and key_name.
+  - `output.tf`: Outputs for jenkins_public_ip and jenkins_url.
+  - `user_data.sh`: Bash script to install Jenkins with Java 11 on Ubuntu.
 
 ## Getting Started
 
